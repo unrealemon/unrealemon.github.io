@@ -1305,6 +1305,7 @@ header .logo a {
 	display: table;
 	position: relative;
 	text-align: center;
+	justify-text: center:
 }
 .intro-overlay {
 	position: absolute;
