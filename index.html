@@ -26,9 +26,7 @@
    ================================================== -->   
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
-        <script>document.getElementById('sendEmailButton').addEventListener('click', function()
-	{ window.location.href = "mailto:example@example.com?";
-          });</script>
+       
    <!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="favicon.png">
@@ -193,11 +191,15 @@
 
    	<div class="row button-section">
    		<div class="col-twelve">
-   			
-
-                        <a href="mailto:emonali.w@gmail.com" title="Hire Me" class="button stroke smoothscroll" button="" id="sendEmailButton">Send me a Mail</a>
+   			<a href="mailto:emonali.w@gmail.com" title="Hire Me" class="button stroke smoothscroll" id="sendEmailButton">Hire Me</a>
    			<a href="https://drive.google.com/file/d/1buFAmKpKjgKAllrn5jMNvL3GRQLCCCxA/view" title="Download CV" class="button button-primary">Download CV</a>
-   		</div>   		
+   		</div>
+        <script>
+        document.getElementById('sendEmailButton').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default link behavior
+            window.location.href = "mailto:emonali.w@gmail.com?subject=Job Opportunity&body=Hello, I would like to discuss a job opportunity with you.";
+        });
+    </script>   		
    	</div>
 
    </section> <!-- /process-->    
