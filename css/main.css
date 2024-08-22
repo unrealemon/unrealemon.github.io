@@ -1039,6 +1039,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #313131;
 	line-height: 1.25;
 	margin-bottom: 1.2rem;
+	text-align: center;
 }
 .section-intro h5 {
 	color: #FF0077;
@@ -1046,6 +1047,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	line-height: 1.875;
 	margin-bottom: 0.3rem;
 	letter-spacing: .4rem;
+	text-align: center;
 }
 
 /**
